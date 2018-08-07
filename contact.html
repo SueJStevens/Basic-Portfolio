@@ -11,37 +11,53 @@
 <body>
 
     <header>
-        header
+
+        <section id="myName">
+            Sue J. Stevens
+        </section>
+
+        <nav>
+            <a href="index.html" class="navitem">About</a>
+            <a href="portfolio.html" class="navitem">Portfolio</a>
+            <a href="contact.html" class="navitem">Contact</a>
+        </nav>
+        
     </header>
 
-    <nav>
-        nav
-    </nav>
+    <div id="content">
 
-    <section>
-        Contact
-        <hr>
-        <form action="" method="" autocomplete="on" enctype="text/plain" method="POST">
-            <label for="name">Name</label>
-            <br>
-            <input type="text" name="name" autocomplete="on" autofocus required><br>
+        <section id="wrapper">
+            <h1>Contact</h1>
+            <hr>
+            <form action="" method="" autocomplete="on" enctype="text/plain" method="POST">
+                
+                <div class="input">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" autocomplete="on" autofocus required><br>
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" autocomplete="on" required><br>
+                </div>
+                <div class="input">    
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message"></textarea>
+                </div>
+    
+                <br>
+                <input class="button" id="Submit" type="submit" value="Submit"> 
+            </form>
 
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email" autocomplete="on" required><br>
+        </section>
 
-            <label for="message">Message</label>
-            <br>
-            <textarea name="message"></textarea>
-
-            <br>
-            <input type="submit" value="Submit"> 
-        </form>
-    </section>
+    </div>
 
     <footer>
-        Footer
-    </footer>
+        <p>&copy; Copyright 2018 Sue J. Stevens</p>
+    </div>
 
 </body>
 </html>
