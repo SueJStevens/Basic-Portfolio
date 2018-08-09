@@ -98,6 +98,7 @@ section {
     margin: auto;
     background-color:#ffffff;
     Padding-bottom: 5px;
+    overflow:auto;
 }
 
 #contact {
@@ -122,12 +123,19 @@ img {
     margin-left: 18px;
 }
 
+.gallery {
+    float: left;
+    position: relative;
+    width: 33%; /*Looks like a 3xn grid for the photo gallery*/
+}
+
 .portfolioImgs {
     width: 300px; 
     height: 180px;
     padding: 10px 10px 0px 10px;
 }
 
+/* Giving credit to photographer for images */
 figcaption {
     padding-left: 10px;
     padding-top: 0px;
@@ -136,11 +144,12 @@ figcaption {
 }
 
 /* Container holding the image and the text */
-.gallery {
+.thumbs {
     position: relative;
+    margin: 18px;
 }
 
-/* Bottom right text */
+/* Block of text over the images */
 .text-block {
     position: absolute;
     width: 280px;
